@@ -1,0 +1,154 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+margin: 0px;
+}
+
+body {
+ font-family: 'Roboto';
+ font-weight: 400;
+ background: #859E9E;
+ font-size: clamp(0.95rem, 1rem, 1.25rem);
+ text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+}
+
+#survey-form {
+ background-color: #d2f5ff; 
+ width: clamp(320px, 65vw, 90%); 
+ box-sizing: border-box;
+ margin: auto;
+ margin-top: max(3rem);
+ margin-bottom: max(3rem);
+ text-align: center;
+ border-radius: 0.5rem;
+ padding-bottom: 2rem;
+ box-shadow: 5px 20px 35px 8px rgba(50, 52, 53, 0.9);
+}
+
+#feature-pic {
+ width: clamp(320px, 70vw, 100%);
+ border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+header :is(h1,p) {
+    line-height: clamp(1.5rem, 1.65rem, 1.75rem);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp(0.75rem, 1.25rem, 1.75rem);
+    margin-top: 2rem;
+
+}
+
+header p {
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+
+select:required:invalid {
+    color: gray;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: black;
+}
+
+
+.content {
+    display: grid;
+    grid-auto-flow: row;
+    line-height: 1.5rem;
+    justify-content: start;
+    text-align: left;
+    margin-left: clamp(2rem, 2.5rem, 5rem);
+    margin-right: clamp(2rem, 2.5rem, 5rem);
+    
+}
+
+input {
+    accent-color:  rgb(98, 21, 143);
+}
+
+
+.input {
+ height: 25px;
+ border-radius: 2px;
+ border: 0px;
+ width: 100%;
+ margin-bottom: 0.5rem;
+ 
+  
+}
+.Thanks {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 100px;
+    resize: none;
+    accent-color: rgb(98, 21, 143);
+}
+.questions {
+ margin-top: 1rem;
+ margin-bottom: 2rem;
+}
+
+:is(.form-group2, .form-group3, .form-group4) {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: start;
+    text-align: left;
+    margin-top: 1rem;
+    
+}
+
+:is(.input-radio, .input-checkbox) {
+   margin-right: 0.5rem;
+}
+
+
+#submit {
+    background-color: turquoise;
+    color: black;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    border: 0px;
+    margin: 10px;
+    
+       
+}
+   
+#submit:hover {
+    background-color: rgb(98, 21, 143);
+    color: white;
+}
+   
+
+@media (min-width: 800px) {
+ .content {
+    margin-left: clamp(4rem, 5rem, 5.5rem);
+    margin-right: clamp(4rem, 5rem, 5.5rem);
+ }
+}
+
+@media (min-width: 1300px) {
+  .content {
+    margin-left: clamp(6rem, 8rem, 9rem);
+    margin-right: clamp(6rem, 8rem, 9rem);
+ } 
+
+}
