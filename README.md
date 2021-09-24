@@ -1,4 +1,5 @@
 **The COVID-19 Vaccine Survey Form**
+
 This project is made under the freeCodeCamp "Responsive Web Design" module and this is just pure HTML and CSS.
 
 **These are the fulfilled requirements of this project:**
