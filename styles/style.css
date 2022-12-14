@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+main {
+    min-width: 36rem;
+    background-color: #d2f5ff;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    padding-bottom: 5rem;
+    border-radius: 0.5rem;
+}
+
+#survey-form {
+    padding: 0 5rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+}
+
+#feature-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+header :is(h1, p) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+}
+
+header p {
+    margin-bottom: 2rem;
+}
+
+.labels {
+    margin: 1.5rem 0 1rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+select:required:invalid {
+    color: gray;
+}
+
+option[value=''][disabled] {
+    display: none;
+}
+
+option {
+    color: black;
+}
+
+input {
+    accent-color: rgb(98, 21, 143);
+}
+
+.input {
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    box-shadow: inset 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+}
+
+.input::placeholder {
+    padding-left: 1rem;
+}
+
+.Thanks {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 10rem;
+    resize: none;
+    accent-color: rgb(98, 21, 143);
+    box-shadow: inset 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.questions {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+:is(.form-group2, .form-group3, .form-group4) {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: start;
+    text-align: left;
+    margin: 1.5rem auto 2.5rem auto;
+}
+
+:is(.form-group2, .form-group3, .form-group4, .form-group5) p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+:is(.form-group2, .form-group3, .form-group4) label {
+    margin-bottom: 1.5rem;
+}
+:is(.input-radio, .input-checkbox) {
+    margin-right: 0.5rem;
+}
+
+.form-group4 label input[name='Not in the list'] {
+    margin-top: 1.5rem;
+}
+
+#submit {
+    background-color: turquoise;
+    color: black;
+    border-radius: 0.4rem;
+    height: 4rem;
+    width: 100%;
+    border: 0;
+}
+
+#submit:hover {
+    background-color: rgb(98, 21, 143);
+    color: white;
+}
+
+@media (min-width: 70rem) {
+    main {
+        width: 70rem;
+        margin: 5rem auto;
+    }
+}
